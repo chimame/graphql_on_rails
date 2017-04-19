@@ -55,3 +55,5 @@ end
 gem 'tzinfo-data'
 
 gem 'graphql'
+
+gem 'graphiql-rails', group: :development
