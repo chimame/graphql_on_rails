@@ -10,4 +10,5 @@ class Types::QueryType < Types::BaseObject
   end
 
   field :posts, [Types::PostType], function: Resolvers::Posts.new
+  field :search_posts, Types::SearchPostsType, function: Resolvers::SearchPosts.new
 end
