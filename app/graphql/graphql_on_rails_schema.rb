@@ -1,3 +1,4 @@
-GraphqlOnRailsSchema = GraphQL::Schema.define do
+class GraphqlOnRailsSchema < GraphQL::Schema
+  mutation(Types::MutationType)
   query(Types::QueryType)
 end
