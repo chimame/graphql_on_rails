@@ -1,0 +1,11 @@
+version: '3'
+services:
+  backend: &app_base
+    build: .
+    command: "bin/rails s -b '0.0.0.0'"
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    tty: true
+    stdin_open: true
