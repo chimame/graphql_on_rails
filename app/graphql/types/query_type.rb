@@ -8,4 +8,6 @@ class Types::QueryType < Types::BaseObject
   def test_field
     "Hello World!"
   end
+
+  field :posts, [Types::PostType], function: Resolvers::Posts.new
 end
